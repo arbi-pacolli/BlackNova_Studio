@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>BlackNova Studio | Website & UI/UX Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="BNS.png" alt="BlackNova Studio Logo" class="logo-img">
+            </div>
+            <div class="nav-links">
+                <a href="#home" data-key="nav_home">Kryesor</a>
+                <a href="#services" data-key="nav_services">Shërbimet</a>
+                <a href="#about" data-key="nav_about">Rreth nesh</a>
+                <button class="btn-lang" id="langToggle">🇬🇧 English</button>
+                <button class="btn-outline-light" id="contactNavBtn" data-key="nav_contact">Kontakt</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO SEKSION -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-badge" data-key="hero_badge">✨ Studio premium për brendet moderne</div>
+                <h1>
+                    <span data-key="hero_title1">Ndërto prezencën tënde online me një</span>
+                    <span class="highlight" data-key="hero_title2">website profesional</span>
+                </h1>
+                <p data-key="hero_desc">Në BlackNova Studio krijojmë website profesionale, UI/UX të pastër, wireframe strategjik dhe visual design premium për brendet që duan të dallohen online.</p>
+                <div class="cta-group">
+                    <button class="btn-primary" id="heroContactBtn" data-key="btn_start">Fillo projektin →</button>
+                    <button class="btn-outline-light" id="servicesBtn" data-key="btn_discover">Zbuloni shërbimet</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SHËRBIMET -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2 data-key="services_title">Shërbimet tona</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3 data-key="service1_title">Website Development</h3>
+                        <p data-key="service1_desc">Faqe web të shpejta, responsive dhe të optimizuara për SEO që konvertojnë vizitorë në klientë.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🎨</div>
+                        <h3 data-key="service2_title">UI / UX Design</h3>
+                        <p data-key="service2_desc">Dizajn intuitiv dhe eksperiencë përdoruesi që i mban vizitorët të angazhuar.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🧩</div>
+                        <h3 data-key="service3_title">Wireframing</h3>
+                        <p data-key="service3_desc">Wireframe strategjik për të planifikuar strukturën para se të fillojë zhvillimi.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">✨</div>
+                        <h3 data-key="service4_title">Visual Design</h3>
+                        <p data-key="service4_desc">Dizajn premium vizual që e bën brandin tuaj të dallohet në treg.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RRETH NESH -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h2 data-key="about_title">Përse BlackNova Studio?</h2>
+                        <p data-key="about_desc1">Ne nuk ndërtojmë vetëm website — ndërtojmë prezencë dixhitale që punon për ty 24/7. Me mbi 5 vjet eksperiencë në dizajn dhe zhvillim, sjellim saktësi dhe kreativitet në çdo projekt.</p>
+                        <p data-key="about_desc2">Çdo website që krijojmë është i pastër në kod, i shpejtë në performancë dhe i dizajnuar për të konvertuar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KONTAKT MODAL -->
+        <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3 data-key="modal_title">Na kontaktoni</h3>
+                <p data-key="modal_desc">Jemi të hapur për bashkëpunime të reja. Na shkruani ose na telefononi.</p>
+                <div class="contact-info-modal">
+                    <p>📞 <a href="tel:+38345710810">+383 (0) 45 710 810</a></p>
+                    <p>✉️ <a href="mailto:studioblacknova@gmail.com">studioblacknova@gmail.com</a></p>
+                </div>
+                <button class="btn-primary close-modal-btn" data-key="modal_close">Mbylle</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="BlackNova Studio Logo" class="footer-logo-img">
+                </div>
+                <div class="footer-contact">
+                    <p>📞 +383 (0) 45 710 810</p>
+                    <p>✉️ studioblacknova@gmail.com</p>
+                </div>
+                <p class="footer-copyright">© 2026 BlackNova Studio. Të gjitha të drejtat e rezervuara.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
