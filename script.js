@@ -21,11 +21,12 @@ const translations = {
         service4_title: "Visual Design",
         service4_desc: "Dizajn premium vizual që e bën brandin tuaj të dallohet në treg.",
         about_title: "Përse BlackNova Studio?",
-        about_desc1: "Ne nuk ndërtojmë vetëm website — ndërtojmë prezencë dixhitale që punon për ty 24/7. Me mbi 5 vjet eksperiencë në dizajn dhe zhvillim, sjellim saktësi dhe kreativitet në çdo projekt.",
+        about_desc1: "Ne nuk ndërtojmë vetëm website — ndërtojmë prezencë dixhitale që punon për ty 24/7. Me mbi 2 vjet eksperiencë në dizajn dhe zhvillim, sjellim saktësi dhe kreativitet në çdo projekt.",
         about_desc2: "Çdo website që krijojmë është i pastër në kod, i shpejtë në performancë dhe i dizajnuar për të konvertuar.",
         modal_title: "Na kontaktoni",
         modal_desc: "Jemi të hapur për bashkëpunime të reja. Na shkruani ose na telefononi.",
-        modal_close: "Mbylle"
+        modal_close: "Mbylle",
+        footer_copyright: "© 2026 BlackNova Studio. Të gjitha të drejtat e rezervuara.",
     },
     en: {
         nav_home: "Home",
@@ -48,11 +49,12 @@ const translations = {
         service4_title: "Visual Design",
         service4_desc: "Premium visual design that makes your brand stand out in the market.",
         about_title: "Why BlackNova Studio?",
-        about_desc1: "We don't just build websites — we build digital presence that works for you 24/7. With over 5 years of experience in design and development, we bring precision and creativity to every project.",
+        about_desc1: "We don't just build websites — we build digital presence that works for you 24/7. With over 2 years of experience in design and development, we bring precision and creativity to every project.",
         about_desc2: "Every website we create is clean in code, fast in performance and designed to convert.",
         modal_title: "Contact us",
         modal_desc: "We are open for new collaborations. Email or call us.",
-        modal_close: "Close"
+        modal_close: "Close",
+        footer_copyright: "© 2026 BlackNova Studio. All rights reserved.",
     }
 };
 
