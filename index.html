@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>BlackNova Studio | Social Media Management</title>
+    <meta name="description" content="BlackNova Studio — Premium web design and development for startups and small businesses. Fast, conversion-focused websites and visual identities.">
+    <title>BlackNova Studio | Web Design & Development</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -17,27 +18,72 @@
             </div>
             <div class="nav-links">
                 <a href="#home" data-key="nav_home">Kryesor</a>
+                <a href="#work" data-key="nav_work">Puna</a>
                 <a href="#services" data-key="nav_services">Shërbimet</a>
                 <a href="#about" data-key="nav_about">Rreth nesh</a>
-                <button class="btn-lang" id="langToggle">🇬🇧 English</button>
-                <button class="btn-outline-light" id="contactNavBtn" data-key="nav_contact">Kontakt</button>
+                <button class="btn-lang" id="langToggle" aria-label="Kalo në English">🇬🇧 English</button>
+                <button class="btn-outline-light open-contact-btn" data-key="nav_contact">Kontakt</button>
             </div>
+            <!-- Hamburger for mobile -->
+            <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+            <a href="#home" data-key="nav_home" class="mobile-link">Kryesor</a>
+            <a href="#work" data-key="nav_work" class="mobile-link">Puna</a>
+            <a href="#services" data-key="nav_services" class="mobile-link">Shërbimet</a>
+            <a href="#about" data-key="nav_about" class="mobile-link">Rreth nesh</a>
+            <button class="btn-lang mobile-lang" id="langToggleMobile" aria-label="Kalo në English">🇬🇧 English</button>
+            <button class="btn-outline-light open-contact-btn" data-key="nav_contact">Kontakt</button>
         </div>
     </nav>
 
     <main>
         <!-- HERO SEKSION -->
         <section id="home" class="hero">
-            <div class="container">
-                <div class="hero-badge" data-key="hero_badge">✨ Studio premium për brendet moderne</div>
-                <h1>
-                    <span data-key="hero_title1">Ndërto prezencën tënde online me një</span>
-                    <span class="highlight" data-key="hero_title2">website profesional</span>
-                </h1>
-                <p data-key="hero_desc">Në BlackNova Studio krijojmë website profesionale, UI/UX të pastër, wireframe strategjik dhe visual design premium për brendet që duan të dallohen online.</p>
-                <div class="cta-group">
-                    <button class="btn-primary" id="heroContactBtn" data-key="btn_start">Fillo projektin →</button>
-                    <button class="btn-outline-light" id="servicesBtn" data-key="btn_discover">Zbuloni shërbimet</button>
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <div class="hero-badge" data-key="hero_badge">✦ Available for projects</div>
+                    <h1>
+                        <span data-key="hero_title1">Web design & development</span><br>
+                        <span class="highlight" data-key="hero_title2">for startups & small businesses</span>
+                    </h1>
+                    <p class="hero-subtitle" data-key="hero_subtitle">We build fast, conversion-focused websites and visual identities that help ambitious brands stand out and grow.</p>
+                    <div class="cta-group">
+                        <button class="btn-primary open-contact-btn" data-key="btn_start">Start a project →</button>
+                        <button class="btn-secondary" id="workBtn" data-key="btn_view_work">View our work</button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label" data-key="stat_projects">projects delivered</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label" data-key="stat_clients">client satisfaction</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24h</span>
+                            <span class="stat-label" data-key="stat_response">response time</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-panel">
+                    <div class="panel-glow"></div>
+                    <div class="panel-card">
+                        <span class="panel-tag" data-key="hero_panel_tag">Trusted creative partner</span>
+                        <h2 data-key="hero_panel_title">Design that converts and feels premium</h2>
+                        <p data-key="hero_panel_desc">We help modern brands launch polished websites and visual identities with clarity, speed, and strategic thinking.</p>
+                        <div class="panel-list">
+                            <div class="panel-item">🎯 <span data-key="hero_panel_item1">Brand-first website strategy</span></div>
+                            <div class="panel-item">⚡ <span data-key="hero_panel_item2">Fast, modern development</span></div>
+                            <div class="panel-item">📈 <span data-key="hero_panel_item3">Design focused on growth</span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -45,32 +91,189 @@
         <!-- SHËRBIMET -->
         <section id="services" class="services">
             <div class="container">
-                <h2 data-key="services_title">Shërbimet tona</h2>
+                <div class="section-header">
+                    <p class="eyebrow" data-key="services_intro">What we deliver</p>
+                    <h2 data-key="services_title">Services that drive results</h2>
+                    <p data-key="services_subtitle">Every project is built with purpose, performance, and your business goals in mind.</p>
+                </div>
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="service-icon">💻</div>
                         <h3 data-key="service1_title">Website Development</h3>
-                        <p data-key="service1_desc">Faqe web të shpejta, responsive dhe të optimizuara për SEO që konvertojnë vizitorë në klientë.</p>
+                        <p data-key="service1_desc">Fast, responsive, and SEO-optimized websites that convert visitors into paying customers.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">🎨</div>
-                        <h3 data-key="service2_title">UI / UX Design</h3>
-                        <p data-key="service2_desc">Dizajn intuitiv dhe eksperiencë përdoruesi që i mban vizitorët të angazhuar.</p>
+                        <h3 data-key="service2_title">UI/UX Design</h3>
+                        <p data-key="service2_desc">Intuitive interfaces and user flows that keep visitors engaged and guide them to action.</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">🧩</div>
-                        <h3 data-key="service3_title">Wireframing</h3>
-                        <p data-key="service3_desc">Wireframe strategjik për të planifikuar strukturën para se të fillojë zhvillimi.</p>
+                        <div class="service-icon">📐</div>
+                        <h3 data-key="service3_title">Wireframing & Strategy</h3>
+                        <p data-key="service3_desc">Strategic blueprints that map out user journeys before a single line of code is written.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">📱</div>
                         <h3 data-key="service4_title">Social Media Management</h3>
-                        <p data-key="service4_desc">Menaxhim profesional i rrjeteve sociale, rritje e angazhimit dhe strategji përmbajtjeje.</p>
+                        <p data-key="service4_desc">Content strategy and community growth that builds authentic brand presence online.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">✨</div>
-                        <h3 data-key="service5_title">Visual Design</h3>
-                        <p data-key="service5_desc">Dizajn premium vizual që e bën brandin tuaj të dallohet në treg.</p>
+                        <h3 data-key="service5_title">Visual Identity</h3>
+                        <p data-key="service5_desc">Premium logos, color systems, and brand assets that make your business unforgettable.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED CASE STUDY -->
+        <section class="case-study">
+            <div class="container">
+                <div class="section-header center">
+                    <p class="eyebrow" data-key="case_eyebrow">Featured case study</p>
+                    <h2 data-key="case_title">Premium Brand Portal</h2>
+                    <p data-key="case_subtitle">How we built a complete design system and web platform for a SaaS brand.</p>
+                </div>
+                <div class="case-grid">
+                    <div class="case-visual">
+                        <div class="case-mockup" role="img" aria-label="Premium Brand Portal project mockup"></div>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-stat">
+                            <span class="case-stat-number">40%</span>
+                            <span class="case-stat-label" data-key="case_stat1">faster load time</span>
+                        </div>
+                        <div class="case-stat">
+                            <span class="case-stat-number">35%</span>
+                            <span class="case-stat-label" data-key="case_stat2">higher engagement</span>
+                        </div>
+                        <div class="case-description">
+                            <p data-key="case_desc1"><strong>Problem:</strong> Outdated platform with poor mobile experience and low conversion.</p>
+                            <p data-key="case_desc2"><strong>Solution:</strong> Complete redesign with custom UI system, responsive framework, and optimized user flows.</p>
+                            <p data-key="case_desc3"><strong>Result:</strong> A modern, fast-loading portal that increased user retention and client satisfaction.</p>
+                        </div>
+                        <div class="case-tags">
+                            <span>UI/UX Design</span>
+                            <span>Frontend Dev</span>
+                            <span>Design System</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SHOWCASE -->
+        <section id="work" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <p class="eyebrow" data-key="projects_intro">Recent work</p>
+                    <h2 data-key="projects_title">Projects that deliver</h2>
+                    <p data-key="projects_subtitle">Real websites and designs built for ambitious brands.</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image project-1">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag">UI/UX</span>
+                                <span class="project-tag">Web Design</span>
+                                <span class="project-tag">SaaS</span>
+                            </div>
+                            <h3 data-key="project1_title">Premium Brand Portal</h3>
+                            <p data-key="project1_desc">Elegant SaaS platform with custom UI system and intuitive workflows that increased user retention.</p>
+                            <a href="#" class="project-link" data-key="project1_link">View case study →</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image project-2">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag">Development</span>
+                                <span class="project-tag">Landing Page</span>
+                            </div>
+                            <h3 data-key="project2_title">Agency Landing Page</h3>
+                            <p data-key="project2_desc">High-conversion landing page with smooth animations and modern design that drove signups.</p>
+                            <a href="#" class="project-link" data-key="project2_link">View case study →</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image project-3">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag">UI/UX</span>
+                                <span class="project-tag">Dashboard</span>
+                            </div>
+                            <h3 data-key="project3_title">Startup Dashboard</h3>
+                            <p data-key="project3_desc">Analytics dashboard with clean interface and responsive design for data-driven teams.</p>
+                            <a href="#" class="project-link" data-key="project3_link">View case study →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS SECTION -->
+        <section id="process" class="process">
+            <div class="container">
+                <div class="section-header center">
+                    <p class="eyebrow" data-key="process_intro">How we work</p>
+                    <h2 data-key="process_title">A structured approach</h2>
+                    <p data-key="process_subtitle">From concept to launch — we keep you involved every step of the way.</p>
+                </div>
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <h3 data-key="process_step1_title">Discovery & Strategy</h3>
+                        <p data-key="process_step1_desc">We learn your brand, goals, and audience before any design work begins.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <h3 data-key="process_step2_title">Design & Wireframes</h3>
+                        <p data-key="process_step2_desc">Interactive mockups and detailed wireframes that map the user experience.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <h3 data-key="process_step3_title">Development</h3>
+                        <p data-key="process_step3_desc">Clean, fast, and production-ready code with performance optimization.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <h3 data-key="process_step4_title">Launch & Support</h3>
+                        <p data-key="process_step4_desc">Thorough testing, smooth launch, and ongoing support after going live.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY US -->
+        <section id="why" class="why">
+            <div class="container">
+                <div class="section-header center">
+                    <p class="eyebrow" data-key="why_eyebrow">Why choose us</p>
+                    <h2 data-key="why_title">Premium service without the agency overhead</h2>
+                    <p data-key="why_desc">We're a small, independent studio focused on real results — not overpromising or fake testimonials.</p>
+                </div>
+                <div class="why-grid">
+                    <div class="why-card">
+                        <div class="why-icon">🎯</div>
+                        <h3 data-key="why_card1_title">Strategic design</h3>
+                        <p data-key="why_card1_desc">Every interface is crafted with your customer journey and brand identity in mind.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">🚀</div>
+                        <h3 data-key="why_card2_title">Fast delivery</h3>
+                        <p data-key="why_card2_desc">Launch quickly with clean, responsive websites built for growth from day one.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">🤝</div>
+                        <h3 data-key="why_card3_title">Ongoing support</h3>
+                        <p data-key="why_card3_desc">We're available for updates, campaigns, and everything your brand needs to succeed.</p>
                     </div>
                 </div>
             </div>
@@ -81,50 +284,67 @@
             <div class="container">
                 <div class="about-grid">
                     <div class="about-content">
-                        <h2 data-key="about_title">Përse BlackNova Studio?</h2>
-                        <p data-key="about_desc1">Ne nuk ndërtojmë vetëm website — ndërtojmë prezencë dixhitale që punon për ty 24/7. Me mbi 5 vjet eksperiencë në dizajn dhe zhvillim, sjellim saktësi dhe kreativitet në çdo projekt.</p>
-                        <p data-key="about_desc2">Çdo website që krijojmë është i pastër në kod, i shpejtë në performancë dhe i dizajnuar për të konvertuar.</p>
+                        <h2 data-key="about_title">About BlackNova Studio</h2>
+                        <p data-key="about_desc1">We're a small, independent studio focused on creating premium websites and visual design for brands that take their online presence seriously. No overclaiming. No fake testimonials. Just real, thoughtful work.</p>
+                        <p data-key="about_desc2">Every website we build is clean in code, fast in performance, and designed to convert. We specialize in helping startups and small businesses launch professional digital experiences.</p>
+                        <div class="about-cta">
+                            <button class="btn-outline-light open-contact-btn" data-key="btn_available">Available now for projects →</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- CTA STRIP -->
+        <section class="cta-strip">
+            <div class="container cta-strip-inner">
+                <div>
+                    <h2 class="cta-strip-title" data-key="cta_strip_title">Ready to grow your brand?</h2>
+                    <p data-key="cta_strip_desc">Let's create a premium website, social strategy, or visual identity that stands out.</p>
+                </div>
+                <button class="btn-primary open-contact-btn" data-key="cta_strip_button">Start a project →</button>
+            </div>
+        </section>
+
         <!-- KONTAKT MODAL -->
-        <div id="contactModal" class="modal">
+        <div id="contactModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
             <div class="modal-content">
-                <span class="close-modal">&times;</span>
-                <h3 data-key="modal_title">Na kontaktoni</h3>
-                <p data-key="modal_desc">Jemi të hapur për bashkëpunime të reja. Na shkruani ose na telefononi.</p>
+                <button class="close-modal" aria-label="Close modal">&times;</button>
+                <h3 id="modalTitle" data-key="modal_title">Contact us</h3>
+                <p data-key="modal_desc">We're open for new collaborations. Email or call us and we'll reply within 24 hours.</p>
                 <div class="contact-info-modal">
                     <p>📞 <a href="tel:+38345710810">+383 (0) 45 710 810</a></p>
                     <p>✉️ <a href="mailto:studioblacknova@gmail.com">studioblacknova@gmail.com</a></p>
                 </div>
-                <button class="btn-primary close-modal-btn" data-key="modal_close">Mbylle</button>
+                <button class="btn-primary close-modal-btn" data-key="modal_close">Close</button>
             </div>
         </div>
     </main>
 
     <!-- FOOTER -->
-<!-- FOOTER -->
-<footer>
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="BNS.png" alt="BlackNova Studio Logo" class="footer-logo-img">
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-section">
+                    <h3>BlackNova Studio</h3>
+                    <p data-key="footer_tagline">Premium web design and development for ambitious brands.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Get in touch</h4>
+                    <p class="footer-contact-info">📞 <a href="tel:+38345710810">+383 (0) 45 710 810</a></p>
+                    <p class="footer-contact-info">📞 <a href="tel:+38345710810">+383 (0) 45 500 450</a></p>
+                    <p class="footer-contact-info">✉️ <a href="mailto:studioblacknova@gmail.com">studioblacknova@gmail.com</a></p>
+                    <a href="https://www.instagram.com/blacknova_studio/" target="_blank" rel="noopener noreferrer" class="social-badge">
+                        <span>Follow on Instagram</span>
+                        <img src="instagram_logo.png" alt="Instagram" class="instagram-icon">
+                    </a>
+                </div>
             </div>
-            <div class="footer-contact">
-                <p>📞 +383 (0) 45 710 810</p>
-                <p>✉️ studioblacknova@gmail.com</p>
+            <div class="footer-bottom">
+                <p class="footer-copyright" data-key="footer_copyright">© 2026 BlackNova Studio. All rights reserved.</p>
             </div>
-            <div class="footer-social">
-                <a href="https://www.instagram.com/blacknova_studio/" target="_blank" class="social-link" aria-label="Instagram">
-                    <img src="instagram_logo.png" alt="Instagram" class="instagram-img">
-                </a>
-            </div>
-            <p class="footer-copyright" data-key="footer_copyright">© 2026 BlackNova Studio. Të gjitha të drejtat e rezervuara.</p>
         </div>
-    </div>
-</footer>
+    </footer>
 
     <script src="script.js"></script>
 </body>
